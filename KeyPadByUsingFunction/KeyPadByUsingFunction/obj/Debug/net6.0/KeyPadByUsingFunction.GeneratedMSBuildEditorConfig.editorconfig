@@ -6,5 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = KeyPadIntToString
-build_property.ProjectDir = C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\
+build_property.RootNamespace = KeyPadByUsingFunction
+build_property.ProjectDir = C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\

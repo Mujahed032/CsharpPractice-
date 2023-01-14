@@ -1,0 +1,15 @@
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\bin\Debug\net6.0\KeyPadByUsingFunction.exe
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\bin\Debug\net6.0\KeyPadByUsingFunction.deps.json
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\bin\Debug\net6.0\KeyPadByUsingFunction.runtimeconfig.json
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\bin\Debug\net6.0\KeyPadByUsingFunction.dll
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\bin\Debug\net6.0\KeyPadByUsingFunction.pdb
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\obj\Debug\net6.0\KeyPadByUsingFunction.csproj.AssemblyReference.cache
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\obj\Debug\net6.0\KeyPadByUsingFunction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\obj\Debug\net6.0\KeyPadByUsingFunction.AssemblyInfoInputs.cache
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\obj\Debug\net6.0\KeyPadByUsingFunction.AssemblyInfo.cs
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\obj\Debug\net6.0\KeyPadByUsingFunction.csproj.CoreCompileInputs.cache
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\obj\Debug\net6.0\KeyPadByUsingFunction.dll
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\obj\Debug\net6.0\refint\KeyPadByUsingFunction.dll
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\obj\Debug\net6.0\KeyPadByUsingFunction.pdb
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\obj\Debug\net6.0\KeyPadByUsingFunction.genruntimeconfig.cache
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadByUsingFunction\KeyPadByUsingFunction\obj\Debug\net6.0\ref\KeyPadByUsingFunction.dll

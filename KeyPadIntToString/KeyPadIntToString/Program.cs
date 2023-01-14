@@ -35,6 +35,9 @@
                 }
             }
             else { Console.WriteLine("You entered an invalid number."); }
+
+            //Get value from Function.
+
         }
 
        
