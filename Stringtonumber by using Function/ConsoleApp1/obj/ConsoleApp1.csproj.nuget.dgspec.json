@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\KeyPadByUsingFunction\\KeyPadByUsingFunction\\KeyPadByUsingFunction.csproj": {}
+    "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\Stringtonumber by using Function\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\KeyPadByUsingFunction\\KeyPadByUsingFunction\\KeyPadByUsingFunction.csproj": {
+    "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\Stringtonumber by using Function\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\KeyPadByUsingFunction\\KeyPadByUsingFunction\\KeyPadByUsingFunction.csproj",
-        "projectName": "KeyPadByUsingFunction",
-        "projectPath": "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\KeyPadByUsingFunction\\KeyPadByUsingFunction\\KeyPadByUsingFunction.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\Stringtonumber by using Function\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectName": "ConsoleApp1",
+        "projectPath": "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\Stringtonumber by using Function\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\KeyPadByUsingFunction\\KeyPadByUsingFunction\\obj\\",
+        "outputPath": "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\Stringtonumber by using Function\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
