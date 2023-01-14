@@ -1,0 +1,15 @@
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\bin\Debug\net6.0\intTostring by using function.exe
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\bin\Debug\net6.0\intTostring by using function.deps.json
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\bin\Debug\net6.0\intTostring by using function.runtimeconfig.json
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\bin\Debug\net6.0\intTostring by using function.dll
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\bin\Debug\net6.0\intTostring by using function.pdb
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\obj\Debug\net6.0\intTostring by using function.csproj.AssemblyReference.cache
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\obj\Debug\net6.0\intTostring by using function.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\obj\Debug\net6.0\intTostring by using function.AssemblyInfoInputs.cache
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\obj\Debug\net6.0\intTostring by using function.AssemblyInfo.cs
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\obj\Debug\net6.0\intTostring by using function.csproj.CoreCompileInputs.cache
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\obj\Debug\net6.0\intTostring by using function.dll
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\obj\Debug\net6.0\refint\intTostring by using function.dll
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\obj\Debug\net6.0\intTostring by using function.pdb
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\obj\Debug\net6.0\intTostring by using function.genruntimeconfig.cache
+C:\Users\hp\OneDrive\Desktop\github\CsharpPractice-\intTostring by using function\intTostring by using function\obj\Debug\net6.0\ref\intTostring by using function.dll

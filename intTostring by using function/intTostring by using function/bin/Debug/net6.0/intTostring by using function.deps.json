@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "intTostring by using function/1.0.0": {
+        "runtime": {
+          "intTostring by using function.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "intTostring by using function/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
