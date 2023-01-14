@@ -1,0 +1,15 @@
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\bin\Debug\net6.0\KeyPadIntToString.exe
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\bin\Debug\net6.0\KeyPadIntToString.deps.json
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\bin\Debug\net6.0\KeyPadIntToString.runtimeconfig.json
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\bin\Debug\net6.0\KeyPadIntToString.dll
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\bin\Debug\net6.0\KeyPadIntToString.pdb
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\obj\Debug\net6.0\KeyPadIntToString.csproj.AssemblyReference.cache
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\obj\Debug\net6.0\KeyPadIntToString.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\obj\Debug\net6.0\KeyPadIntToString.AssemblyInfoInputs.cache
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\obj\Debug\net6.0\KeyPadIntToString.AssemblyInfo.cs
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\obj\Debug\net6.0\KeyPadIntToString.csproj.CoreCompileInputs.cache
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\obj\Debug\net6.0\KeyPadIntToString.dll
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\obj\Debug\net6.0\refint\KeyPadIntToString.dll
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\obj\Debug\net6.0\KeyPadIntToString.pdb
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\obj\Debug\net6.0\KeyPadIntToString.genruntimeconfig.cache
+C:\Users\azeem\Desktop\mujahed\CsharpPractice-\KeyPadIntToString\KeyPadIntToString\obj\Debug\net6.0\ref\KeyPadIntToString.dll
