@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\azeem\\.nuget\\packages\\": {}
+    "C:\\Users\\hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\azeem\\Desktop\\mujahed\\CsharpPractice-\\KeyPadIntToString\\KeyPadIntToString\\KeyPadIntToString.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\KeyPadIntToString\\KeyPadIntToString\\KeyPadIntToString.csproj",
       "projectName": "KeyPadIntToString",
-      "projectPath": "C:\\Users\\azeem\\Desktop\\mujahed\\CsharpPractice-\\KeyPadIntToString\\KeyPadIntToString\\KeyPadIntToString.csproj",
-      "packagesPath": "C:\\Users\\azeem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\azeem\\Desktop\\mujahed\\CsharpPractice-\\KeyPadIntToString\\KeyPadIntToString\\obj\\",
+      "projectPath": "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\KeyPadIntToString\\KeyPadIntToString\\KeyPadIntToString.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hp\\OneDrive\\Desktop\\github\\CsharpPractice-\\KeyPadIntToString\\KeyPadIntToString\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\azeem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
