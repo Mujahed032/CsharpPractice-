@@ -8,14 +8,18 @@ namespace AnimalProject
 {
     internal class Cat : Animal
     {
-       public Cat(string Name,  bool canFly)
+       public Cat(string Name,  bool canFly): base(Name, canFly)
         {
-            this.Name = Name;
-            this.CanFly = canFly;   
+           
         }
         public override string MakesSound()
         {
             return "Meow";
+        }
+
+        internal override int GetInsurance()
+        {
+            return 100;
         }
     }
 }

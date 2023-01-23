@@ -6,10 +6,23 @@ using System.Threading.Tasks;
 
 namespace AnimalProject
 {
+
+    public enum AnimalType
+    {
+        Cat = 1,
+        Horse = 2,
+        Pigeon = 3        
+    }
     internal abstract class Animal
     {
         public string Name { get; set; }
         public bool CanFly { get; set; }
+
+        public Animal(string name, bool canFly)
+        {
+            Name = name;
+            CanFly = canFly;
+        }
 
         public abstract string MakesSound();
 
@@ -20,5 +33,7 @@ namespace AnimalProject
             else
                 Console.WriteLine($"I am a {Name} I cannot fly. The sound I make is : {MakesSound()}");
         }
+
+        internal abstract int GetInsurance();
     }
 }
