@@ -8,9 +8,9 @@ namespace Inheritance_testing_file
 {
     internal class Student:Person
     {
-        private string v;
+        string subject;
 
-        public Student(string name, int id, string subject) : base(name, id,subject)
+        public Student(string name, int id, string subject) : base(name, id)
         {
             
             this.id = id;
