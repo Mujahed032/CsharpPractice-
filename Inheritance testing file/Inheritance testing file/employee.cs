@@ -6,28 +6,54 @@ using System.Threading.Tasks;
 
 namespace Inheritance_testing_file
 {
-    internal class employee : Person
+    internal class Employee : Person
     {
-        double salary;
-        string designation;
-        public employee(string name, int id, double salary, string designation) : base(name, id)
-        { 
-            this.salary = salary;
-            this.id = id;
-            this.Name = name;
-            this.designation = designation;
 
+        public EmployeeType Type { get; set; }
+     
+
+        public double Salary
+        {
+            get; set;
+        }
+
+        public string Designation;
+        public Employee(string name, int id,  string designation, EmployeeType type) : base(name, id)
+        { 
+                 
+            this.Designation = designation;
+            this.Type = type;
 
         }
 
         public override void DescribeMe()
         {
-            Console.WriteLine("employee name is: "+Name+" And his desgination is "+designation);
+            Console.WriteLine($"employee name is: {FirstName} And his desgination is {Designation}");
             Console.WriteLine("employee id is: "+id);
-            Console.WriteLine("employee salary is: " + salary);
+           
         }
-        
-    }
-   
 
+        public static void SetSalary(Employee employeeX, Employee settingEmployee, double salary)
+        {
+            if (settingEmployee.Type == EmployeeType.Director)
+                employeeX.Salary = salary;
+            else
+            {
+               Console.WriteLine("This employee is not authorized to set salary information.");
+                
+            }
+        }
+
+        public static double GetSalary(Employee employeeX, Employee queryingEmployee)
+        {
+        if (queryingEmployee.Type == EmployeeType.Director)
+            return employeeX.Salary;
+        else
+        {
+          Console.WriteLine("This employee is not authorized to get salary information.");
+            return 0;
+        }
+        }
+
+        }
 }

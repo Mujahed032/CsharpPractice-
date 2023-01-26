@@ -8,17 +8,44 @@ namespace Inheritance_testing_file
 {
     internal abstract class Person
     {
-        
+        private string _FirstName;
+        public string FirstName 
+        {
+            get { return _FirstName; } 
+            set
+            {
+                if(string.IsNullOrEmpty(value))
+                    
+                    throw new ArgumentNullException("First Name cannot be blank.");
+               
+                else
+                _FirstName = value;
+            }
+        }
 
-        public string Name { get; set; }
+        private string _LastName;
+
+        public string LastName
+        {
+            get { return _LastName; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+
+                    throw new ArgumentNullException("Last Name cannot be blank.");
+
+                else
+                    _LastName = value;
+            }
+        }
         public int id { get; set; }
 
 
        
 
-        protected Person(string name, int id)
+        protected Person(string firstName, int id)
         {
-            this.Name = name;
+            this.FirstName = firstName;
             this.id = id;
          
         }

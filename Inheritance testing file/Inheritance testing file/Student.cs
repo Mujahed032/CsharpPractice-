@@ -12,9 +12,7 @@ namespace Inheritance_testing_file
 
         public Student(string name, int id, string subject) : base(name, id)
         {
-            
-            this.id = id;
-            this.Name = name;
+                    
             this.subject= subject;
 
 
@@ -24,7 +22,7 @@ namespace Inheritance_testing_file
 
         public override void DescribeMe()
         {
-            Console.WriteLine("student name is " + Name + " and he is studying "+ subject);
+            Console.WriteLine("student name is " + FirstName + " and he is studying "+ subject);
             Console.WriteLine("student id is " + id);
          
         }
