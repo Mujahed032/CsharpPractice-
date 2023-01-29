@@ -15,6 +15,13 @@
             this.price = price;
             this.Republishyear = Republishyear;
         }
+        public void Display()
+        {
+            Console.WriteLine($"Book name is {name}");
+            Console.WriteLine($"Book id is {id}");
+            Console.WriteLine($"Book price is {price}");
+            Console.WriteLine($"Book RepublishYear is {Republishyear}");
+        }
 
     }
 }

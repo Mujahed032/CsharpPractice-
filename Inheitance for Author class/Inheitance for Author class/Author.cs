@@ -44,10 +44,18 @@ namespace Inheitance_for_Author_class
 
         }
 
-        List<Book> Authors = new List<Book>();
-        
-           
+        List<Book> GetBooks = new List<Book>();
 
-           
+        public void Describe()
+        {
+            Console.WriteLine($"Author FirstName is {FirstName}");
+            Console.WriteLine($"Author LastName is {LastName}");
+            Console.WriteLine($"Author id is {id}");
+        }
+
+
+
+
+
     }
 }
