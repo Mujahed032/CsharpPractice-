@@ -3,24 +3,31 @@
     internal class Book
 
     {
-        public string name { get; set; }
-        public int id { get; set; }
+        public string Name { get; set; }
+        public int Id { get; set; }
 
-        public  double price { get; set; }
-        public   int Republishyear { get; set; }
-        public Book(string name, int id, double price,int Republishyear)
+        public  double Price { get; set; }
+        public   DateTime PublishedDate { get; set; }
+        public Book(string name, int id, double price,DateTime Republishyear)
         {
-            this.name = name;
-            this.id = id;
-            this.price = price;
-            this.Republishyear = Republishyear;
+            this.Name = name;
+            this.Id = id;
+            this.Price = price;
+            this.PublishedDate = Republishyear;
         }
+
+
         public void Display()
         {
-            Console.WriteLine($"Book name is {name}");
-            Console.WriteLine($"Book id is {id}");
-            Console.WriteLine($"Book price is {price}");
-            Console.WriteLine($"Book RepublishYear is {Republishyear}");
+            Console.WriteLine($"Book name is {Name}");
+            Console.WriteLine($"Book id is {Id}");
+            Console.WriteLine($"Book price is {Price}");
+            Console.WriteLine($"Book RepublishYear is {PublishedDate}");
+        }
+
+        public override string ToString()
+        {
+           return $"Book name is {Name}. Book Id is {Id}. Book price is {Price}. Book PublishedDate is {PublishedDate}";
         }
 
     }

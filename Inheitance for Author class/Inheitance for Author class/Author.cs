@@ -34,23 +34,35 @@ namespace Inheitance_for_Author_class
                 else { _LastName = value; }
             }
         }
-        public int id { get; set; }
+        public int Id { get; set; }
 
         public Author(string firstName, string lastName, int id)
         {
-            this._FirstName= firstName;
-            this._LastName= lastName;
-            this.id = id;
+            FirstName = firstName;
+            LastName= lastName;
+            Id = id;
+            Books = new List<Book>();
 
         }
 
-        List<Book> GetBooks = new List<Book>();
+
+
+        public List<Book> Books { get; set; }
+
+        public void DisplayBooks()
+        {
+            Console.WriteLine($"The author {FirstName} {LastName} wrote the following books.");
+            foreach(Book xyzBook in Books)
+            {
+                Console.WriteLine(xyzBook.ToString());
+            }
+        }
 
         public void Describe()
         {
             Console.WriteLine($"Author FirstName is {FirstName}");
             Console.WriteLine($"Author LastName is {LastName}");
-            Console.WriteLine($"Author id is {id}");
+            Console.WriteLine($"Author id is {Id}");
         }
 
 
