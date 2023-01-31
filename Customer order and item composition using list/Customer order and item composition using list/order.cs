@@ -1,4 +1,7 @@
-﻿namespace Customer_order_and_item_composition_using_list
+﻿using System.Diagnostics;
+using System.Xml.Linq;
+
+namespace Customer_order_and_item_composition_using_list
 {
     internal class order
     {
@@ -8,7 +11,7 @@
 
        
 
-        public List<orderitems> orderitems { get; set; }
+        public List<Product> productitem { get; set; }
 
         public double TotalPrice { get; set; }
 
@@ -20,7 +23,7 @@
             this.OrderDate=OrderDate;
           
             this.TotalPrice=TotalPrice;
-            orderitems = new List<orderitems>();
+            productitem = new List<Product>();
         }
         public void method()
         {
@@ -29,6 +32,9 @@
            
             Console.WriteLine($"order Price is {TotalPrice}");
         }
-      
+        public override string ToString()
+        {
+            return $"order Id is {Id}. OrderDate is {OrderDate}. order TotalPrice is {TotalPrice}";
+        }
     }  
 }

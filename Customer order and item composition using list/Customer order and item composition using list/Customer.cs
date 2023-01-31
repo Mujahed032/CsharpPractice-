@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace Customer_order_and_item_composition_using_list
 {
@@ -32,6 +33,16 @@ namespace Customer_order_and_item_composition_using_list
             orders = new List<order>();
             Address = new List<Address>();
         }
+        public void Displaycustomer()
+        {
+            Console.WriteLine($"The Customer {FirstName} {LastName} order the following products.");
+            foreach (order xyzBook in orders)
+            {
+                Console.WriteLine(xyzBook.ToString());
+            }
+        }
+
+
 
         public void Describe()
         {
