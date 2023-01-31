@@ -9,20 +9,25 @@ namespace Customer_order_and_item_composition_using_list
 
         public DateTime OrderDate { get; set; }
 
-       
+
 
         public List<Product> productitem { get; set; }
 
-        public double TotalPrice { get; set; }
+        public double TotalPrice {
+            get
+            {
+                return 0;
+                //Write a method here to get the total price by adding all the products in this order.
+            }
+            }
 
         
 
-        public order(int ID, DateTime OrderDate,  double TotalPrice)
+        public order(int ID, DateTime OrderDate)
         {
             this.Id=ID;
-            this.OrderDate=OrderDate;
+            this.OrderDate=OrderDate;          
           
-            this.TotalPrice=TotalPrice;
             productitem = new List<Product>();
         }
         public void method()

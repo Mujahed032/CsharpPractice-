@@ -8,9 +8,9 @@ namespace Customer_order_and_item_composition_using_list
         {
            
 
-            order Table = new order(1, DateTime.Now,800);
-            order bedsheet = new order(2, DateTime.Now, 500);
-            order pen = new order (3, DateTime.Now, 500);
+            order Table = new order(1, DateTime.Now);
+            order bedsheet = new order(2, DateTime.Now);
+            order pen = new order (3, DateTime.Now);
             Table.method();
 
             //Product Productitem = new Product(33, 1300, "table and bedsheet", "no of item is two");
