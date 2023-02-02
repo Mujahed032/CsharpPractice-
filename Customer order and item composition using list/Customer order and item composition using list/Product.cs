@@ -9,9 +9,11 @@
         public string Name { get; set; }
 
         public string Description { get; set; }
-        public Product(int Id, double Price, string Name, string Description)
+
+        public int OrderId { get; set; }
+        public Product( double Price, string Name, string Description)
         {
-            this.Id = Id;
+            
             this.Price = Price;
             this.Name = Name;
             this.Description = Description;

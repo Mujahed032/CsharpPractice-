@@ -9,34 +9,39 @@ namespace Customer_order_and_item_composition_using_list
 {
     internal class Customer
     {
-       
+        public int Id { get; set; }
         public string FirstName { get; set; }
         
         public string LastName { get; set; }
-        
-        public int Id { get; set; }
        
 
         
 
-        public List<order> orders { get; set; }
+        public List<Order> orders { get; set; }
 
-        public List<Address> Address { get; set; }
+        public Address HomeAddress { get; set; }
 
-        public Customer(string FirstNAme, string LastName, int Id)
+        public int AddressId { get; set; }
+
+        public int OrderId { get; set; }
+        public Customer()
+        {
+
+        }
+        public Customer(string FirstNAme, string LastName)
         {
             this.FirstName = FirstNAme;
             this.LastName = LastName;
-            this.Id = Id;
+           
            
             
-            orders = new List<order>();
-            Address = new List<Address>();
+            orders = new List<Order>();
+          
         }
         public void Displaycustomer()
         {
             Console.WriteLine($"The Customer {FirstName} {LastName} order the following products.");
-            foreach (order xyzBook in orders)
+            foreach (Order xyzBook in orders)
             {
                 Console.WriteLine(xyzBook.ToString());
             }

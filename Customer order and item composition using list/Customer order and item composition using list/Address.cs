@@ -15,9 +15,11 @@
         public int PinCode { get; set;}
         public string Country { get; set;}
 
-        public Address (int Id, int HouseNo, String StreetName, string City, string State, int PinCode, String Country)
+      
+        public int CustomerId { get; set; }
+        public Address ( int HouseNo, String StreetName, string City, string State, int PinCode, String Country)
         {
-            this.Id= Id;
+          
             this.HouseNo= HouseNo;
             this.StreetName = StreetName;
             this.City= City;

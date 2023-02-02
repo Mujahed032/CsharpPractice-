@@ -3,7 +3,7 @@ using System.Xml.Linq;
 
 namespace Customer_order_and_item_composition_using_list
 {
-    internal class order
+    internal class Order
     {
         public int Id { get; set; }
 
@@ -12,23 +12,28 @@ namespace Customer_order_and_item_composition_using_list
 
 
         public List<Product> productitem { get; set; }
-        private double _TotalPrice = 0;
-        public double TotalPrice {
-            get
-            {
-                return 0;
-                //Write a method here to get the total price by adding all the products in this order.
-                foreach (var product in productitem);
+        
+        public double TotalPrice {get; set; }
 
-                
+        public int CustomerId { get; set; }
+        public double GetTotalPrice()
+        {
+            double returnPrice = 0;
+            foreach (var product in productitem)
+            {
+                returnPrice = returnPrice + product.Price;
             }
+            TotalPrice = returnPrice;
+            return returnPrice;
         }
 
-        
-
-        public order(int ID, DateTime OrderDate)
+        public Order()
         {
-            this.Id=ID;
+
+        }
+        public Order( DateTime OrderDate)
+        {
+            
             this.OrderDate=OrderDate;          
           
             productitem = new List<Product>();
