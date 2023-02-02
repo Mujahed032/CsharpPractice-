@@ -5,27 +5,30 @@ namespace Customer_order_and_item_composition_using_list
     internal class Program
     {
         static void Main(string[] args)
-        {
-           
+        { 
 
-            order Table = new order(1, DateTime.Now);
-            order bedsheet = new order(2, DateTime.Now);
-            order pen = new order (3, DateTime.Now);
-            Table.method();
+            Product Table = new Product(1, 1400, "IKEA Table", "Brown Dining Table");
+            Product Bedsheet = new Product(2, 250, "IKEA Bedsheet", "Queen Size");
+            Product Pen = new Product(3, 50, "Montex", "Blue");
+            Table.show();
 
-            //Product Productitem = new Product(33, 1300, "table and bedsheet", "no of item is two");
-            //Productitem.show();
-
-
-            Customer khizar = new Customer("khizar", "Ali", 11);
-            khizar.orders.Add(Table);
             
 
-            Customer azhar = new Customer("azhar", "khan", 22);
-            azhar.orders.Add(pen);
+            order order1 = new order(11, DateTime.Now);
+            order1.productitem.Add(Table);
+            order1.productitem.Add(Bedsheet);
+            order1.productitem.Add(Pen);
+            order1.method();
+
+
+            Customer khizar = new Customer("khizar", "Ali", 111);
+            khizar.orders.Add(order1);
+            
+
+            
 
             khizar.Displaycustomer();
-            azhar.Displaycustomer();
+          
 
 
            Address customeraddress = new Address(22,92345,"seventombs","hyderbad","telengana",500008,"india");
@@ -33,7 +36,7 @@ namespace Customer_order_and_item_composition_using_list
 
             Console.WriteLine(Table.ToString());
 
-            List<Customer> customer = new List<Customer>() { khizar, azhar };
+            List<Customer> customer = new List<Customer>() { khizar };
             File.WriteAllText("C:\\Users\\hp\\OneDrive\\Desktop\\khizar.json", JsonConvert.SerializeObject(customer));
 
             string Filecontent = File.ReadAllText("C:\\Users\\hp\\OneDrive\\Desktop\\khizar.jSon");

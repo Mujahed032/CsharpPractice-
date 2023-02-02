@@ -12,14 +12,17 @@ namespace Customer_order_and_item_composition_using_list
 
 
         public List<Product> productitem { get; set; }
-
+        private double _TotalPrice = 0;
         public double TotalPrice {
             get
             {
                 return 0;
                 //Write a method here to get the total price by adding all the products in this order.
+                foreach (var product in productitem);
+
+                
             }
-            }
+        }
 
         
 
