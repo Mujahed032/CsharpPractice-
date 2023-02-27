@@ -7,7 +7,7 @@
 
         public String Title { get; set; }
 
-        public int AuthorID { get; set; }
+        
 
         public Author   Author { get; set; }
     }
