@@ -1,4 +1,6 @@
 using ManyToMany_Relation_Using_EF_Core.Data;
+using ManyToMany_Relation_Using_EF_Core.Interface;
+using ManyToMany_Relation_Using_EF_Core.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace ManyToMany_Relation_Using_EF_Core
@@ -12,6 +14,7 @@ namespace ManyToMany_Relation_Using_EF_Core
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddScoped<BookInterface, BookRepository>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
