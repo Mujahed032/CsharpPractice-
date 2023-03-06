@@ -11,9 +11,9 @@ void GetPhones(string userName)
     {
         if (user.Name == "Khizar")
         {
-            foreach (var item in user.phones)
+            foreach (var phone in user.phones)
             {
-                Console.WriteLine(item.Name);
+                Console.WriteLine(phone.Name);
             }
         }
 
@@ -48,6 +48,21 @@ void GetAllPhonesByCategory(string categoryName)
 GetAllUsersByCategory("IOS");
 
 void GetAllUsersByCategory(string v)
+{
+    throw new NotImplementedException();
+}
+
+GetAllUsersWhoHaveMoreThanOnePhone();
+
+void GetAllUsersWhoHaveMoreThanOnePhone()
+{
+    throw new NotImplementedException();
+}
+
+
+GetAllPhonesWhoHaveMoreThanOneUser();
+
+void GetAllPhonesWhoHaveMoreThanOneUser()
 {
     throw new NotImplementedException();
 }
