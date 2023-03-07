@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var _context = new DataContext();
 //GetPhones("Ahmad");
+
 void GetPhones(string userName)
 { 
    
@@ -21,12 +22,25 @@ void GetPhones(string userName)
     }
 }
 
+
 //GetUsers("Samsung S20");
 
 void GetUsers(string phoneName)
 {
+    var phones = _context.phones.Include(p => p.Users).ToList();
+    foreach (var phone in phones)
+    {
+        if(phone.Name == "S20")
+        {
+            foreach (var item in phone.Users)
+            {
+                Console.WriteLine(item.Name);
+            }
+        }
+    }
     
 }
+
 
 GetAllPhonesByCategory("Android");
 
@@ -45,18 +59,34 @@ void GetAllPhonesByCategory(string categoryName)
     }
 }
 
+
 GetAllUsersByCategory("IOS");
 
-void GetAllUsersByCategory(string v)
+void GetAllUsersByCategory(string categoryName)
 {
-    throw new NotImplementedException();
+    var phones = _context.phones.Include(p => p.Users).ToList();
+    foreach (var phone in phones)
+    {
+        if (phone.Category.PhoneType == categoryName)
+        {
+            foreach (var item in phone.Users)
+            {
+                Console.WriteLine(item.Name);
+            }
+        }
+    }
 }
+
 
 GetAllUsersWhoHaveMoreThanOnePhone();
 
 void GetAllUsersWhoHaveMoreThanOnePhone()
 {
-    throw new NotImplementedException();
+    var users = _context.users.OrderBy(u => u.Id).ToList();
+    foreach (var user in users)
+    {
+        Console.WriteLine(user);
+    } 
 }
 
 
@@ -64,6 +94,11 @@ GetAllPhonesWhoHaveMoreThanOneUser();
 
 void GetAllPhonesWhoHaveMoreThanOneUser()
 {
-    throw new NotImplementedException();
+    var phones = _context.phones.OrderBy(p => p.Id).ToList();
+    foreach (var phone in phones)
+    {
+        Console.WriteLine(phone);
+    }
+   
 }
 
