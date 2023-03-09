@@ -30,7 +30,13 @@ ICollection<Course> GetAllCoursesByStudentName(string StudentName)
     return student.courses;
 }
 
-InsertUser();
+//InsertUser();
+
+var teachersWhoTeachMoreThanOneCourse = GetTeachersWhoTeachMoreThanOneCourse();
+
+var studentsWhoTakeMoreThanOneCourse = GetStudentsWhoTakeMoreThanOneCourse();
+
+
 void InsertUser()
 {
     var CoursePhysics = new Course() { CourseName = "physics" };
