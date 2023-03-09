@@ -1,8 +1,42 @@
 ﻿
 using LearningClassRelationsUsingConsole;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 
 var _context = new DataContext();
+
+GetAllStudentsByCourseName("physics");
+void GetAllStudentsByCourseName(string CourseName)
+{
+    var courses = _context.courses.Include(c => c.students).ToList();
+    foreach (var course in courses)
+    {
+        if(course.CourseName == CourseName)
+        {
+            foreach (var item in course.students)
+            {
+                Console.WriteLine(item.Name);
+            }
+        }
+    }
+}
+GetAllCoursesByStudentName("Sameer");
+
+void GetAllCoursesByStudentName(string StudentName)
+{
+    var students = _context.students.Include(s => s.courses).ToList();
+    foreach (var student in students)
+    {
+        if(student.Name == StudentName)
+        {
+            foreach (var item in student.courses)
+            {
+                Console.WriteLine(item.CourseName);
+            }
+        }
+    }
+}
+
 InsertUser();
 void InsertUser()
 {
@@ -34,75 +68,6 @@ void InsertUser()
     _context.AddRange(new List<Student>() { StudentZaki, StudentAzeem, StudentShafi, StudentSameer });
     _context.AddRange(new List<Teacher>() { TeacherKhizar, TeacherAhmed, TeacherAhsan, TeacherAzhar });
     _context.SaveChanges();
-
-    
-    GetAllStudentsByCourseName("Physics");
-    GetTeacher("physics");
-    GetAllCoursesByStudentName("Sameer");
-    GetAllTeachersByStudentName("zaki");
-    GetAllCoursesByTeacherName("Azhar");
-    GetAllStudentsByTeacherNAme("Ahmed");
-
-    void GetAllStudentsByCourseName(string CourseName)
-    {
-        var students = _context.courses.Include(c => c.students).ToList();
-        foreach (var student in students)
-        {
-            if(student.CourseName == CourseName)
-            {
-                Console.WriteLine(student.CourseName);
-            }
-        }
-        
-    }
-
-
-
-    
-    void GetTeacher(string CourseName)
-    {
-        var Teachers = _context.teachers.
-
-    }
-
-
-
-    void GetAllCoursesByStudentName(string StudentName)
-    {
-        throw new NotImplementedException();
-    }
-
-
-
-    
-    void GetAllTeachersByStudentName(string studentName)
-    {
-
-        throw new NotImplementedException();
-    }
-
-
-
-    
-    void GetAllCoursesByTeacherName(string TeacherName)
-    {
-        var courses = _context.teachers.Include(t => t.Courses).ToList();
-        foreach (var course in courses)
-        {
-            if (course.Name == TeacherName) ;
-            {
-                Console.WriteLine(course.Name);
-            }
-        }
-    }
-
-
-
-   
-    void GetAllStudentsByTeacherName(string TeacherName)
-    {
-        throw new NotImplementedException();
-    }
 
 
 }
