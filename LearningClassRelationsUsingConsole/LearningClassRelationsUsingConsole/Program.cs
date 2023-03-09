@@ -5,20 +5,22 @@ using Microsoft.Identity.Client;
 
 var _context = new DataContext();
 
-GetAllStudentsByCourseName("physics");
-void GetAllStudentsByCourseName(string CourseName)
+var studentsWhoTookPhysicsCourse = GetAllStudentsByCourseName("physics");
+ICollection<Student> GetAllStudentsByCourseName(string CourseName)
 {
-    var courses = _context.courses.Include(c => c.students).ToList();
-    foreach (var course in courses)
-    {
-        if(course.CourseName == CourseName)
-        {
-            foreach (var item in course.students)
-            {
-                Console.WriteLine(item.Name);
-            }
-        }
-    }
+    var course = _context.courses.Include(c => c.students).Where(c => c.CourseName == CourseName).FirstOrDefault();
+    return course.students;
+
+    //One more way
+    //var courses = _context.courses.Include(c => c.students);
+    //foreach (var oneCourse in courses)
+    //{
+    //    if (oneCourse.CourseName == CourseName)
+    //    {
+    //        return oneCourse.students;
+    //    }
+    //}
+
 }
 GetAllCoursesByStudentName("Sameer");
 
