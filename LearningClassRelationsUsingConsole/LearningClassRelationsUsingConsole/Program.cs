@@ -22,21 +22,12 @@ ICollection<Student> GetAllStudentsByCourseName(string CourseName)
     //}
 
 }
-GetAllCoursesByStudentName("Sameer");
+//var GetSameerCourses = GetAllCoursesByStudentName("Sameer");
 
-void GetAllCoursesByStudentName(string StudentName)
+ICollection<Course> GetAllCoursesByStudentName(string StudentName)
 {
-    var students = _context.students.Include(s => s.courses).ToList();
-    foreach (var student in students)
-    {
-        if(student.Name == StudentName)
-        {
-            foreach (var item in student.courses)
-            {
-                Console.WriteLine(item.CourseName);
-            }
-        }
-    }
+    var student = _context.students.Include(c => c.courses).Where(c => c.Name == StudentName).FirstOrDefault();
+    return student.courses;
 }
 
 InsertUser();
