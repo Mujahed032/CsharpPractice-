@@ -13,6 +13,11 @@ namespace LearningClassRelationsUsingConsole
 
         public string Name { get; set; }
 
-        public ICollection<Course> Courses { get; set; }    
+        public ICollection<Course> Courses { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

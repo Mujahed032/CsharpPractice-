@@ -16,13 +16,13 @@ ICollection<Student> GetAllStudentsByCourseName(string CourseName)
     //foreach (var oneCourse in courses)
     //{
     //    if (oneCourse.CourseName == CourseName)
-    //    {
+    //  {
     //        return oneCourse.students;
     //    }
     //}
 
 }
-//var GetSameerCourses = GetAllCoursesByStudentName("Sameer");
+var GetSameerCourses = GetAllCoursesByStudentName("Sameer");
 
 ICollection<Course> GetAllCoursesByStudentName(string StudentName)
 {
@@ -33,8 +33,19 @@ ICollection<Course> GetAllCoursesByStudentName(string StudentName)
 //InsertUser();
 
 var teachersWhoTeachMoreThanOneCourse = GetTeachersWhoTeachMoreThanOneCourse();
+ICollection<Teacher> GetTeachersWhoTeachMoreThanOneCourse()
+{
+    var Teachers = _context.teachers.Include(t => t.Courses).Where(th => th.Courses.Count > 1).ToList();
+    return Teachers;
+}
 
 var studentsWhoTakeMoreThanOneCourse = GetStudentsWhoTakeMoreThanOneCourse();
+ICollection<Student> GetStudentsWhoTakeMoreThanOneCourse()
+{
+    var students = _context.students.Include(s => s.courses).Where(sh => sh.courses.Count > 1).ToList();
+    return students;
+
+}
 
 
 void InsertUser()
