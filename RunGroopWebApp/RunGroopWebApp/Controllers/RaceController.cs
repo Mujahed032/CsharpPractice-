@@ -27,5 +27,20 @@ namespace RunGroopWebApp.Controllers
             Race Race = await _raceRepository.GetByIdAsync(id);
             return View(Race);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> Create(Race race)
+        {
+            if(!ModelState.IsValid)
+            {
+                return View(race);
+            }
+            _raceRepository.Add(race);
+            return RedirectToAction("Index");
+        }
     }
 }
