@@ -1,4 +1,4 @@
-﻿namespace RunGroopWebApp.Models
+﻿namespace RunGroopWebApp.Enum
 {
     public enum RaceCategory
     {

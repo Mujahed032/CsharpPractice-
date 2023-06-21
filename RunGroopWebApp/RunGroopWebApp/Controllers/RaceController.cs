@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using RunGroopWebApp.Data;
 using RunGroopWebApp.Interface;
 using RunGroopWebApp.Models;
+using RunGroopWebApp.Repository;
+using RunGroopWebApp.Services;
+using RunGroopWebApp.ViewModels;
 
 namespace RunGroopWebApp.Controllers
 {
@@ -10,11 +13,13 @@ namespace RunGroopWebApp.Controllers
     {
         
         private readonly IRaceRepository _raceRepository;
+        private readonly IPhotoService _photoService;
 
-        public RaceController(IRaceRepository raceRepository)
+        public RaceController(IRaceRepository raceRepository, IPhotoService photoService)
         {
             
             _raceRepository = raceRepository;
+            _photoService = photoService;
         }
         public async Task<IActionResult> Index()
         {
@@ -33,14 +38,35 @@ namespace RunGroopWebApp.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Create(Race race)
+        public async Task<IActionResult> Create(CreateRaceViewModel RaceVm)
         {
-            if(!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return View(race);
+                var result = await _photoService.AddphotoAsync(RaceVm.Image);
+
+                var race = new Race
+                {
+
+                    Title = RaceVm.Title,
+                    Description = RaceVm.Description,
+                    Image = result.Url.ToString(),
+                    Address = new Address
+                    {
+                        Street = RaceVm.Address.Street,
+                        City = RaceVm.Address.City,
+                        State = RaceVm.Address.State,
+                    }
+                };
+
+                _raceRepository.Add(race);
+                return RedirectToAction("Index");
             }
-            _raceRepository.Add(race);
-            return RedirectToAction("Index");
+            else
+            {
+                ModelState.AddModelError("", "photo upload failed");
+            }
+            return View(RaceVm);
         }
+    
     }
 }
